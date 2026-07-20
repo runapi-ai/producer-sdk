@@ -1,0 +1,3 @@
+package producer
+
+var contractSchema = map[string]any{"text-to-music": map[string]any{"models": []any{"fuzz-2.0"}, "fields_by_model": map[string]any{"fuzz-2.0": map[string]any{"model": map[string]any{"required": true}, "prompt": map[string]any{"required": true, "min": 1, "max": 200, "length": true}, "vocal_mode": map[string]any{"enum": []any{"exact_lyrics", "instrumental"}, "required": true}}}, "rules": []any{map[string]any{"when": map[string]any{"vocal_mode": "exact_lyrics"}, "required": []any{"lyrics"}}, map[string]any{"when": map[string]any{"vocal_mode": "instrumental"}, "forbidden": []any{"lyrics"}}}}}
