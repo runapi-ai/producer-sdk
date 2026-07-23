@@ -47,7 +47,18 @@ When integrating Producer into an app, backend, worker, library, Rails service, 
 - exact_lyrics: provide lyrics and a prompt describing the music style and production.
 - instrumental: provide a prompt and omit lyrics.
 
-Both modes use model fuzz-2.0.
+Both modes support `fuzz-2.0`, `fuzz-2.0-pro`, `fuzz-2.0-raw`, `fuzz-1.1-pro`, `fuzz-1.0-pro`, `fuzz-1.0`, `fuzz-1.1`, and `fuzz-0.8`.
+
+## Variants
+
+- [FUZZ 2.0](https://runapi.ai/models/producer/fuzz-2.0.md)
+- [FUZZ 2.0 Pro](https://runapi.ai/models/producer/fuzz-2.0-pro.md)
+- [FUZZ 2.0 Raw](https://runapi.ai/models/producer/fuzz-2.0-raw.md)
+- [FUZZ 1.1 Pro](https://runapi.ai/models/producer/fuzz-1.1-pro.md)
+- [FUZZ 1.0 Pro](https://runapi.ai/models/producer/fuzz-1.0-pro.md)
+- [FUZZ 1.0](https://runapi.ai/models/producer/fuzz-1.0.md)
+- [FUZZ 1.1](https://runapi.ai/models/producer/fuzz-1.1.md)
+- [FUZZ 0.8](https://runapi.ai/models/producer/fuzz-0.8.md)
 
 ## CLI path
 
@@ -75,6 +86,6 @@ Completed tasks return an audios array. Each result may include an audio URL, co
 ## References
 
 - Model overview: https://runapi.ai/models/producer.md
-- FUZZ 2.0 details and pricing: https://runapi.ai/models/producer.md
+- Producer model details and pricing: https://runapi.ai/models/producer/fuzz-2.0.md
 - Provider page: https://runapi.ai/providers/producer.md
 - Full catalog: https://runapi.ai/models.md

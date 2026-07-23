@@ -39,6 +39,13 @@ class ProducerClientTest {
 
     assertEquals("\"fuzz-2.0\"", json);
     assertEquals(new TextToMusicModel("fuzz-2.0"), Json.mapper().readValue(json, TextToMusicModel.class));
+    assertEquals("fuzz-2.0-pro", TextToMusicModel.FUZZ_2_0_PRO.value());
+    assertEquals("fuzz-2.0-raw", TextToMusicModel.FUZZ_2_0_RAW.value());
+    assertEquals("fuzz-1.1-pro", TextToMusicModel.FUZZ_1_1_PRO.value());
+    assertEquals("fuzz-1.0-pro", TextToMusicModel.FUZZ_1_0_PRO.value());
+    assertEquals("fuzz-1.0", TextToMusicModel.FUZZ_1_0.value());
+    assertEquals("fuzz-1.1", TextToMusicModel.FUZZ_1_1.value());
+    assertEquals("fuzz-0.8", TextToMusicModel.FUZZ_0_8.value());
   }
 
   @Test

@@ -1,6 +1,14 @@
 import type { AsyncTaskStatus } from '@runapi.ai/core';
 
-export type ProducerModel = 'fuzz-2.0';
+export type ProducerModel =
+  | 'fuzz-2.0'
+  | 'fuzz-2.0-pro'
+  | 'fuzz-2.0-raw'
+  | 'fuzz-1.1-pro'
+  | 'fuzz-1.0-pro'
+  | 'fuzz-1.0'
+  | 'fuzz-1.1'
+  | 'fuzz-0.8';
 export type VocalMode = 'exact_lyrics' | 'instrumental';
 export type GenerationStage = 'all_audios_ready' | 'failed';
 

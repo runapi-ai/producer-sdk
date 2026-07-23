@@ -8,6 +8,13 @@ type GenerationStage string
 
 const (
 	ModelFuzz20           ProducerModel = "fuzz-2.0"
+	ModelFuzz20Pro        ProducerModel = "fuzz-2.0-pro"
+	ModelFuzz20Raw        ProducerModel = "fuzz-2.0-raw"
+	ModelFuzz11Pro        ProducerModel = "fuzz-1.1-pro"
+	ModelFuzz10Pro        ProducerModel = "fuzz-1.0-pro"
+	ModelFuzz10           ProducerModel = "fuzz-1.0"
+	ModelFuzz11           ProducerModel = "fuzz-1.1"
+	ModelFuzz08           ProducerModel = "fuzz-0.8"
 	VocalModeExactLyrics  VocalMode     = "exact_lyrics"
 	VocalModeInstrumental VocalMode     = "instrumental"
 )

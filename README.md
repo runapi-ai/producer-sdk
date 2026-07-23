@@ -37,7 +37,7 @@ Gradle:
 
 ~~~kotlin
 dependencies {
-  implementation("ai.runapi:runapi-producer:0.1.0")
+  implementation("ai.runapi:runapi-producer:0.2.0")
 }
 ~~~
 
@@ -62,6 +62,8 @@ console.log(result.audios[0].audio_url);
 
 Use vocal_mode exact_lyrics with lyrics, or instrumental without lyrics. Use create, get, and run to submit, inspect, or create-and-poll a task.
 
+Supported models: `fuzz-2.0`, `fuzz-2.0-pro`, `fuzz-2.0-raw`, `fuzz-1.1-pro`, `fuzz-1.0-pro`, `fuzz-1.0`, `fuzz-1.1`, and `fuzz-0.8`.
+
 ## Repository layout
 
 - `js/` publishes `@runapi.ai/producer`.
@@ -75,7 +77,7 @@ Generated media URLs are temporary. Download and store results in your own durab
 ## Links
 
 - Model page: https://runapi.ai/models/producer
-- FUZZ 2.0 details and pricing: https://runapi.ai/models/producer
+- FUZZ 2.0 details and pricing: https://runapi.ai/models/producer/fuzz-2.0
 - Product docs: https://runapi.ai/docs#producer
 - SDK docs: https://runapi.ai/docs#sdk-producer
 - PHP package repository: https://github.com/runapi-ai/producer-php

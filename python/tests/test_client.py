@@ -41,7 +41,7 @@ def test_create_posts_flat_exact_lyrics_body():
     client = ProducerClient(api_key="key", http_client=fake)
 
     result = client.text_to_music.create(
-        model="fuzz-2.0",
+        model="fuzz-2.0-pro",
         vocal_mode="exact_lyrics",
         prompt="Warm acoustic pop with clear vocals",
         lyrics="[Verse] Morning light",
@@ -53,7 +53,7 @@ def test_create_posts_flat_exact_lyrics_body():
             "post",
             "/api/v1/producer/text_to_music",
             {
-                "model": "fuzz-2.0",
+                "model": "fuzz-2.0-pro",
                 "vocal_mode": "exact_lyrics",
                 "prompt": "Warm acoustic pop with clear vocals",
                 "lyrics": "[Verse] Morning light",

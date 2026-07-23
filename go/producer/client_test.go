@@ -27,7 +27,7 @@ func TestTextToMusicCreate(t *testing.T) {
 	stub := &stubHTTPClient{response: json.RawMessage(`{"id":"task-1","status":"processing"}`)}
 	client := NewClientWithHTTP(stub)
 	response, err := client.TextToMusic.Create(context.Background(), TextToMusicParams{
-		Model: ModelFuzz20, VocalMode: VocalModeExactLyrics,
+		Model: ModelFuzz20Pro, VocalMode: VocalModeExactLyrics,
 		Prompt: "Warm acoustic pop with clear vocals", Lyrics: "[Verse] Morning light", Title: "Morning Light",
 	})
 	if err != nil {
@@ -37,7 +37,7 @@ func TestTextToMusicCreate(t *testing.T) {
 		t.Fatalf("unexpected request: %s %s", stub.method, stub.path)
 	}
 	body := stub.body.(map[string]any)
-	if body["vocal_mode"] != "exact_lyrics" || body["lyrics"] != "[Verse] Morning light" {
+	if body["model"] != "fuzz-2.0-pro" || body["vocal_mode"] != "exact_lyrics" || body["lyrics"] != "[Verse] Morning light" {
 		t.Fatalf("unexpected body: %v", body)
 	}
 	if response.ID != "task-1" {

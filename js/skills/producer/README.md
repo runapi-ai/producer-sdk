@@ -42,10 +42,21 @@ runapi wait <task-id> --service producer --action text-to-music
 
 Use exact_lyrics with lyrics, or instrumental without lyrics.
 
+## Variants
+
+- [FUZZ 2.0](https://runapi.ai/models/producer/fuzz-2.0)
+- [FUZZ 2.0 Pro](https://runapi.ai/models/producer/fuzz-2.0-pro)
+- [FUZZ 2.0 Raw](https://runapi.ai/models/producer/fuzz-2.0-raw)
+- [FUZZ 1.1 Pro](https://runapi.ai/models/producer/fuzz-1.1-pro)
+- [FUZZ 1.0 Pro](https://runapi.ai/models/producer/fuzz-1.0-pro)
+- [FUZZ 1.0](https://runapi.ai/models/producer/fuzz-1.0)
+- [FUZZ 1.1](https://runapi.ai/models/producer/fuzz-1.1)
+- [FUZZ 0.8](https://runapi.ai/models/producer/fuzz-0.8)
+
 ## Links
 
 - Model page: https://runapi.ai/models/producer
-- FUZZ 2.0 details and pricing: https://runapi.ai/models/producer
+- Producer model details and pricing: https://runapi.ai/models/producer/fuzz-2.0
 - Product docs: https://runapi.ai/docs#producer
 - SDK repository: https://github.com/runapi-ai/producer-sdk
 - Provider page: https://runapi.ai/providers/producer

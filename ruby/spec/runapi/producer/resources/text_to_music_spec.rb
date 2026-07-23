@@ -10,7 +10,7 @@ RSpec.describe RunApi::Producer::Resources::TextToMusic do
   describe "#create" do
     it "POSTs flat exact-lyrics params" do
       params = {
-        model: "fuzz-2.0",
+        model: "fuzz-2.0-pro",
         vocal_mode: "exact_lyrics",
         prompt: "Warm acoustic pop with clear vocals",
         lyrics: "[Verse] Morning light",
@@ -28,7 +28,7 @@ RSpec.describe RunApi::Producer::Resources::TextToMusic do
     it "rejects lyrics in instrumental mode" do
       expect do
         text_to_music.create(
-          model: "fuzz-2.0",
+          model: "fuzz-2.0-pro",
           vocal_mode: "instrumental",
           prompt: "Cinematic ambient score",
           lyrics: "Should not be sent"

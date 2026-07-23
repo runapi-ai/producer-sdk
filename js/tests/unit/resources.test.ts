@@ -12,7 +12,7 @@ describe('Producer TextToMusic', () => {
     const resource = new TextToMusic(mockHttp);
 
     await resource.create({
-      model: 'fuzz-2.0',
+      model: 'fuzz-2.0-pro',
       vocal_mode: 'exact_lyrics',
       prompt: 'Warm acoustic pop with clear vocals',
       lyrics: '[Verse] Morning light',
@@ -21,7 +21,7 @@ describe('Producer TextToMusic', () => {
 
     expect(mockHttp.request).toHaveBeenCalledWith('POST', '/api/v1/producer/text_to_music', {
       body: {
-        model: 'fuzz-2.0',
+        model: 'fuzz-2.0-pro',
         vocal_mode: 'exact_lyrics',
         prompt: 'Warm acoustic pop with clear vocals',
         lyrics: '[Verse] Morning light',

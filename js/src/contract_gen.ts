@@ -1,10 +1,143 @@
 export const contract = {
   "text-to-music": {
     "models": [
-      "fuzz-2.0"
+      "fuzz-0.8",
+      "fuzz-1.0",
+      "fuzz-1.0-pro",
+      "fuzz-1.1",
+      "fuzz-1.1-pro",
+      "fuzz-2.0",
+      "fuzz-2.0-pro",
+      "fuzz-2.0-raw"
     ],
     "fields_by_model": {
+      "fuzz-0.8": {
+        "model": {
+          "required": true
+        },
+        "prompt": {
+          "required": true,
+          "min": 1,
+          "max": 200,
+          "length": true
+        },
+        "vocal_mode": {
+          "enum": [
+            "exact_lyrics",
+            "instrumental"
+          ],
+          "required": true
+        }
+      },
+      "fuzz-1.0": {
+        "model": {
+          "required": true
+        },
+        "prompt": {
+          "required": true,
+          "min": 1,
+          "max": 200,
+          "length": true
+        },
+        "vocal_mode": {
+          "enum": [
+            "exact_lyrics",
+            "instrumental"
+          ],
+          "required": true
+        }
+      },
+      "fuzz-1.0-pro": {
+        "model": {
+          "required": true
+        },
+        "prompt": {
+          "required": true,
+          "min": 1,
+          "max": 200,
+          "length": true
+        },
+        "vocal_mode": {
+          "enum": [
+            "exact_lyrics",
+            "instrumental"
+          ],
+          "required": true
+        }
+      },
+      "fuzz-1.1": {
+        "model": {
+          "required": true
+        },
+        "prompt": {
+          "required": true,
+          "min": 1,
+          "max": 200,
+          "length": true
+        },
+        "vocal_mode": {
+          "enum": [
+            "exact_lyrics",
+            "instrumental"
+          ],
+          "required": true
+        }
+      },
+      "fuzz-1.1-pro": {
+        "model": {
+          "required": true
+        },
+        "prompt": {
+          "required": true,
+          "min": 1,
+          "max": 200,
+          "length": true
+        },
+        "vocal_mode": {
+          "enum": [
+            "exact_lyrics",
+            "instrumental"
+          ],
+          "required": true
+        }
+      },
       "fuzz-2.0": {
+        "model": {
+          "required": true
+        },
+        "prompt": {
+          "required": true,
+          "min": 1,
+          "max": 200,
+          "length": true
+        },
+        "vocal_mode": {
+          "enum": [
+            "exact_lyrics",
+            "instrumental"
+          ],
+          "required": true
+        }
+      },
+      "fuzz-2.0-pro": {
+        "model": {
+          "required": true
+        },
+        "prompt": {
+          "required": true,
+          "min": 1,
+          "max": 200,
+          "length": true
+        },
+        "vocal_mode": {
+          "enum": [
+            "exact_lyrics",
+            "instrumental"
+          ],
+          "required": true
+        }
+      },
+      "fuzz-2.0-raw": {
         "model": {
           "required": true
         },
