@@ -27,8 +27,8 @@ Use create, get, and run for asynchronous tasks. Use exact_lyrics with lyrics, o
 ## Links
 
 - Model page: https://runapi.ai/models/producer
-- Product docs: https://runapi.ai/docs#producer
-- SDK docs: https://runapi.ai/docs#sdk-producer
+- Product docs: https://runapi.ai/docs/api/producer/text-to-music
+- SDK docs: https://runapi.ai/docs/resources/sdks
 - FUZZ 2.0 details and pricing: https://runapi.ai/models/producer
 - Repository: https://github.com/runapi-ai/producer-sdk
 

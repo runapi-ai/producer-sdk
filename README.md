@@ -78,8 +78,8 @@ Generated media URLs are temporary. Download and store results in your own durab
 
 - Model page: https://runapi.ai/models/producer
 - FUZZ 2.0 details and pricing: https://runapi.ai/models/producer/fuzz-2.0
-- Product docs: https://runapi.ai/docs#producer
-- SDK docs: https://runapi.ai/docs#sdk-producer
+- Product docs: https://runapi.ai/docs/api/producer/text-to-music
+- SDK docs: https://runapi.ai/docs/resources/sdks
 - PHP package repository: https://github.com/runapi-ai/producer-php
 - Provider page: https://runapi.ai/providers/producer
 - Full catalog: https://runapi.ai/models

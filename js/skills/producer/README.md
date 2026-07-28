@@ -57,7 +57,7 @@ Use exact_lyrics with lyrics, or instrumental without lyrics.
 
 - Model page: https://runapi.ai/models/producer
 - Producer model details and pricing: https://runapi.ai/models/producer/fuzz-2.0
-- Product docs: https://runapi.ai/docs#producer
+- Product docs: https://runapi.ai/docs/api/producer/text-to-music
 - SDK repository: https://github.com/runapi-ai/producer-sdk
 - Provider page: https://runapi.ai/providers/producer
 - Full catalog: https://runapi.ai/models

@@ -60,8 +60,8 @@ Completed results expose the audio URL, cover image URL, public model name, titl
 ## Links
 
 - Model page: https://runapi.ai/models/producer
-- SDK docs: https://runapi.ai/docs#sdk-producer
-- Product docs: https://runapi.ai/docs#producer
+- SDK docs: https://runapi.ai/docs/resources/sdks
+- Product docs: https://runapi.ai/docs/api/producer/text-to-music
 - FUZZ 2.0 details and pricing: https://runapi.ai/models/producer
 - Full catalog: https://runapi.ai/models
 - Repository: https://github.com/runapi-ai/producer-sdk
