@@ -1,6 +1,8 @@
 // Package producer provides the Producer FUZZ music generation API client.
 package producer
 
+import "github.com/runapi-ai/core-sdk/go/core"
+
 type ProducerModel string
 type VocalMode string
 type TaskStatus string
@@ -30,6 +32,7 @@ type TextToMusicParams struct {
 }
 
 type AsyncTaskResponse struct {
+	core.TaskBillingFacts
 	ID     string     `json:"id"`
 	Status TaskStatus `json:"status"`
 	Error  string     `json:"error,omitempty"`

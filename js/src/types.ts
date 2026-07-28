@@ -1,4 +1,4 @@
-import type { AsyncTaskStatus } from '@runapi.ai/core';
+import type { AsyncTaskStatus, TaskBillingResponse, TaskResponse } from '@runapi.ai/core';
 
 export type ProducerModel =
   | 'fuzz-2.0'
@@ -36,7 +36,7 @@ export interface InstrumentalParams extends TextToMusicBaseParams {
 
 export type TextToMusicParams = ExactLyricsParams | InstrumentalParams;
 
-export interface TaskCreateResponse {
+export interface TaskCreateResponse extends TaskBillingResponse {
   id: string;
   status?: AsyncTaskStatus;
 }
@@ -51,7 +51,7 @@ export interface Audio {
   lyrics?: string;
 }
 
-export interface TextToMusicResponse {
+export interface TextToMusicResponse extends TaskResponse {
   id: string;
   status: AsyncTaskStatus;
   audios?: Audio[];
