@@ -57,8 +57,7 @@ def test_create_posts_flat_exact_lyrics_body():
                 "vocal_mode": "exact_lyrics",
                 "prompt": "Warm acoustic pop with clear vocals",
                 "lyrics": "[Verse] Morning light",
-                "title": "Morning Light",
-            },
+                "title": "Morning Light"},
         )
     ]
     assert isinstance(result, TextToMusicResponse)
@@ -68,15 +67,13 @@ def test_get_decodes_normalized_audio_results():
     fake = FakeHttp(
         {
             "id": "task-1",
-            "status": "completed",
+            "status": "completed", "usage": {"cost": 0.05},
             "audios": [
                 {
                     "id": "audio-1",
                     "audio_url": "https://media.runapi.ai/audio.m4a",
-                    "duration_seconds": 78.35,
-                }
-            ],
-        }
+                    "duration_seconds": 78.35}
+            ]}
     )
     client = ProducerClient(api_key="key", http_client=fake)
 

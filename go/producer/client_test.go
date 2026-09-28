@@ -28,8 +28,7 @@ func TestTextToMusicCreate(t *testing.T) {
 	client := NewClientWithHTTP(stub)
 	response, err := client.TextToMusic.Create(context.Background(), TextToMusicParams{
 		Model: ModelFuzz20Pro, VocalMode: VocalModeExactLyrics,
-		Prompt: "Warm acoustic pop with clear vocals", Lyrics: "[Verse] Morning light", Title: "Morning Light",
-	})
+		Prompt: "Warm acoustic pop with clear vocals", Lyrics: "[Verse] Morning light", Title: "Morning Light"})
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -46,7 +45,7 @@ func TestTextToMusicCreate(t *testing.T) {
 }
 
 func TestTextToMusicGet(t *testing.T) {
-	stub := &stubHTTPClient{response: json.RawMessage(`{"id":"task-1","status":"completed","audios":[{"id":"audio-1","audio_url":"https://media.runapi.ai/google-storage/producer-app-public/clips/audio.m4a","duration_seconds":78.35}]}`)}
+	stub := &stubHTTPClient{response: json.RawMessage(`{"id":"task-1","status":"completed", "usage": {"cost": 0.05},"audios":[{"id":"audio-1","audio_url":"https://media.runapi.ai/google-storage/producer-app-public/clips/audio.m4a","duration_seconds":78.35}]}`)}
 	client := NewClientWithHTTP(stub)
 	response, err := client.TextToMusic.Get(context.Background(), "task-1")
 	if err != nil {
