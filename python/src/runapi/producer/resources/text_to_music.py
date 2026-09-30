@@ -6,7 +6,6 @@ from typing import Any, Optional
 
 from runapi.core import Resource, RequestOptions
 
-from ..contract_gen import CONTRACT
 from ..types import CompletedTextToMusicResponse, TextToMusicResponse
 
 
@@ -26,7 +25,6 @@ class TextToMusic(Resource):
     def create(self, options: Optional[RequestOptions] = None, **params: Any) -> Any:
         """Create a text-to-music task and return immediately with an ``id``."""
         compacted = self._compact_params(params)
-        self._validate_contract(CONTRACT["text-to-music"], compacted)
         return self._request("post", self.ENDPOINT, body=compacted, options=options)
 
     def get(self, id: str, options: Optional[RequestOptions] = None) -> Any:

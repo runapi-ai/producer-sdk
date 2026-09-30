@@ -1,7 +1,7 @@
 import pytest
 
 from runapi.core import config
-from runapi.core.errors import AuthenticationError, ValidationError
+from runapi.core.errors import AuthenticationError
 from runapi.producer import ProducerClient
 from runapi.producer.resources.text_to_music import TextToMusic
 from runapi.producer.types import TextToMusicResponse
@@ -82,15 +82,3 @@ def test_get_decodes_normalized_audio_results():
     assert fake.calls == [("get", "/api/v1/producer/text_to_music/task-1", None)]
     assert result.audios[0].id == "audio-1"
     assert result.audios[0].duration_seconds == 78.35
-
-
-def test_rejects_lyrics_in_instrumental_mode():
-    client = ProducerClient(api_key="key", http_client=FakeHttp())
-
-    with pytest.raises(ValidationError, match="lyrics is not allowed"):
-        client.text_to_music.create(
-            model="fuzz-2.0",
-            vocal_mode="instrumental",
-            prompt="Cinematic ambient score",
-            lyrics="Should not be sent",
-        )

@@ -2,7 +2,6 @@
 
 require "runapi/core"
 require_relative "producer/types"
-require_relative "producer/contract_gen"
 require_relative "producer/resources/text_to_music"
 require_relative "producer/client"
 

@@ -24,17 +24,6 @@ RSpec.describe RunApi::Producer::Resources::TextToMusic do
       expect(result).to be_a(RunApi::Producer::Types::TextToMusicResponse)
       expect(result.id).to eq("task-1")
     end
-
-    it "rejects lyrics in instrumental mode" do
-      expect do
-        text_to_music.create(
-          model: "fuzz-2.0-pro",
-          vocal_mode: "instrumental",
-          prompt: "Cinematic ambient score",
-          lyrics: "Should not be sent"
-        )
-      end.to raise_error(RunApi::Core::ValidationError, /lyrics is not allowed/)
-    end
   end
 
   describe "#get" do

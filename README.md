@@ -37,7 +37,7 @@ Gradle:
 
 ~~~kotlin
 dependencies {
-  implementation("ai.runapi:runapi-producer:0.2.0")
+  implementation("ai.runapi:runapi-producer:0.3.0")
 }
 ~~~
 

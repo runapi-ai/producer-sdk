@@ -14,9 +14,9 @@ public final class TextToMusicParams {
   private final String callbackUrl;
 
   private TextToMusicParams(Builder builder) {
-    this.model = ProducerParamUtils.requireNonBlankTrim(builder.model, "model");
-    this.vocalMode = ProducerParamUtils.requireNonBlank(builder.vocalMode, "vocalMode");
-    this.prompt = ProducerParamUtils.requireNonBlank(builder.prompt, "prompt");
+    this.model = builder.model;
+    this.vocalMode = builder.vocalMode;
+    this.prompt = builder.prompt;
     this.lyrics = builder.lyrics;
     this.title = builder.title;
     this.callbackUrl = builder.callbackUrl;
@@ -65,38 +65,38 @@ public final class TextToMusicParams {
 
     /** Sets the model slug using a string value. */
     public Builder model(String value) {
-      this.model = ProducerParamUtils.requireNonBlankTrim(value, "model");
+      this.model = value;
       return this;
     }
 
 
     /** Sets the vocal mode. */
     public Builder vocalMode(String value) {
-      this.vocalMode = ProducerParamUtils.requireNonBlank(value, "vocalMode");
+      this.vocalMode = value;
       return this;
     }
 
     /** Sets the text prompt. */
     public Builder prompt(String value) {
-      this.prompt = ProducerParamUtils.requireNonBlank(value, "prompt");
+      this.prompt = value;
       return this;
     }
 
     /** Sets the lyrics. */
     public Builder lyrics(String value) {
-      this.lyrics = ProducerParamUtils.requireNonBlank(value, "lyrics");
+      this.lyrics = value;
       return this;
     }
 
     /** Sets the title. */
     public Builder title(String value) {
-      this.title = ProducerParamUtils.requireNonBlank(value, "title");
+      this.title = value;
       return this;
     }
 
     /** Sets the webhook URL for task completion notifications. */
     public Builder callbackUrl(String value) {
-      this.callbackUrl = ProducerParamUtils.requireNonBlank(value, "callbackUrl");
+      this.callbackUrl = value;
       return this;
     }
 
